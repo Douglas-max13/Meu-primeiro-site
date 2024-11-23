@@ -1,0 +1,65 @@
+/* Melhorando o Layout */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f3;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* Header Responsivo */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botões com Animação */
+button {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transition: background 0.3s, transform 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* Melhorando o Carrossel */
+.carrossel {
+  max-width: 100%;
+  overflow: hidden;
+}
+.carrossel-item img, .carrossel-item video {
+  border-radius: 10px;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+  .carrossel {
+    flex-direction: column;
+  }
+  .carrossel-item img, .carrossel-item video {
+    width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+/* Fundo animado */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background: url('IMAGENS/1.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Seções */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+/* Carrossel */
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.carrossel-item {
+  display: none;
+}
+.carrossel-item.active {
+  display: block;
+}
+
+/* Botões */
+button {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+button:hover {
+  background: #2575fc;
+}
+
+/* Botões de Curtida e Comentários */
+.like-btn, .comentar-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.like-btn:hover, .comentar-btn:hover {
+  background: #45a049;
+}
+
+.comentarios {
+  margin-top: 10px;
+}
+
+.comentarios input {
+  width: calc(100% - 110px);
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.lista-comentarios {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.lista-comentarios li {
+  background: #000000;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Header */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
